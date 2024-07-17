@@ -36,7 +36,7 @@ class DataRepositoryImpl(private val client: HttpClient, private val json: Json)
     override fun saveProjects(projects: List<Project>) {
         // TODO: use database in the future
         try {
-            FileWriter("projects.json").use { writer ->
+            FileWriter(OUTPUT_FILE).use { writer ->
                 writer.write(json.encodeToString(projects))
             }
         } catch (e: Exception) {
@@ -55,6 +55,7 @@ class DataRepositoryImpl(private val client: HttpClient, private val json: Json)
     }
 
     companion object {
+        const val OUTPUT_FILE = "output/projects.json"
         const val GITHUB_API_URL = "https://api.github.com"
     }
 }
