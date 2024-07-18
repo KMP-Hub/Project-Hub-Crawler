@@ -36,6 +36,6 @@ class ResponseRepositoryImpl(private val client: HttpClient) : ResponseRepositor
     companion object {
         const val GITHUB_HOST = "github.com"
         const val FORM_CSV_URL =
-            "https://docs.google.com/spreadsheets/d/e/2PACX-1vTvO-Szw4Gu6qKRdC0zBuMiVlpg8faCGpPcw62ghUt-uJBTv4t3cRNUbF0_ElwZh5-1ytUk_1ZvwZY_/pub?gid=261170658&single=true&output=csv"
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vR23rS1fYdJgr9QeZNmVmuNTxnEWf0QX7CkRvGisRe-pdf03IDvbjdwynO06cpzYq8LuDcmPKpzTA3B/pub?output=csv"
     }
 }

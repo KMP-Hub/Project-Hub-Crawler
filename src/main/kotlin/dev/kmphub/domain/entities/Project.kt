@@ -11,7 +11,7 @@ class Project(
     @SerialName("name")
     val name: String,
     @SerialName("description")
-    val description: String,
+    val description: String?,
     @SerialName("platforms")
     val platforms: List<SupportedPlatform>,
     @SerialName("types")

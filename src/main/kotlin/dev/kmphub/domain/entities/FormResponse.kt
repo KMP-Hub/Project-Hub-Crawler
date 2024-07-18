@@ -11,5 +11,5 @@ enum class SupportedPlatform {
 }
 
 enum class ProjectType {
-    Library, Showcase, Framework, Other
+    Library, Showcase, Framework, Tool, Other
 }

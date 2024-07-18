@@ -10,7 +10,7 @@ class GitHubRepo(
     @SerialName("name")
     val name: String,
     @SerialName("description")
-    val description: String,
+    val description: String?,
     @SerialName("html_url")
     val url: String,
     @SerialName("topics")
